@@ -1,5 +1,5 @@
 [package]
-name = "msync-server"
+name = "msync_server"
 version = "0.1.0"
 edition = "2024"
 authors = ["cryoelite"]

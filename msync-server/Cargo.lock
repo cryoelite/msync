@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "msync"
+name = "msync_server"
 version = "0.1.0"
