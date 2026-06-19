@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1112)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(14.583333333333334,0,0,14.583333333333334,150,150)"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#75fb4c"><path d="M101.17-165.96v-607.82q0-35 24.82-60.31 24.81-25.3 61.37-25.3h36.27q26.76 0 49.11 15.19 22.35 15.2 31.91 41.72L480-325.13l174.91-472.78q10.27-27.29 32.94-44.39 22.67-17.09 53.69-17.09h27.36q37.52 0 64.01 26.69 26.48 26.69 26.48 63.92v602.82q0 28.2-18.38 46.49-18.39 18.3-46.66 18.3-28.26 0-46.46-18.3-18.19-18.29-18.19-46.49v-460.47l-181.48 489.3q-4.44 16.26-18.84 25.61-14.4 9.35-31.32 9.35h-37.24q-16.69 0-31.21-9.63t-18.96-25.9L230.87-622v456.04q0 28.2-18.39 46.49-18.38 18.3-46.65 18.3-28.26 0-46.46-18.3-18.2-18.29-18.2-46.49Z"></path></svg></g></g><defs><clipPath id="SvgjsClipPath1112"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1113)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(14.583333333333334,0,0,14.583333333333334,150,150)"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#75fb4c"><path d="M101.17-165.96v-607.82q0-35 24.82-60.31 24.81-25.3 61.37-25.3h36.27q26.76 0 49.11 15.19 22.35 15.2 31.91 41.72L480-325.13l174.91-472.78q10.27-27.29 32.94-44.39 22.67-17.09 53.69-17.09h27.36q37.52 0 64.01 26.69 26.48 26.69 26.48 63.92v602.82q0 28.2-18.38 46.49-18.39 18.3-46.66 18.3-28.26 0-46.46-18.3-18.19-18.29-18.19-46.49v-460.47l-181.48 489.3q-4.44 16.26-18.84 25.61-14.4 9.35-31.32 9.35h-37.24q-16.69 0-31.21-9.63t-18.96-25.9L230.87-622v456.04q0 28.2-18.39 46.49-18.38 18.3-46.65 18.3-28.26 0-46.46-18.3-18.2-18.29-18.2-46.49Z"></path></svg></g></g><defs><clipPath id="SvgjsClipPath1113"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g></svg>
