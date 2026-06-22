@@ -1,6 +1,7 @@
 ## Global gitignores
 ./**/.env*
 ./**/.idea/
+design_philosophy.md
 
 ## Msync-server
 # will have compiled files and executables
