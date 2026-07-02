@@ -1,9 +1,32 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/src/config/site";
-import { Geist, Geist_Mono } from "next/font/google";
+import { fonts, siteConfig } from "@/src/config/site";
 import "./globals.css";
 import React from "react";
 
+
+export const metadata: Metadata = {
+  applicationName: siteConfig.name,
+  title: {
+    default: siteConfig.title,
+    template: "%s",
+  },
+  description: siteConfig.description,
+  
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${fonts.variable} h-full antialiased`}>
+      <body>{children}</body>
+    </html>
+  );
+}
+
+/*
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,28 +36,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  applicationName: siteConfig.name,
-  title: {
-    default: siteConfig.title,
-    template: "%s",
-  },
-  description: siteConfig.description,
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return <html lang="en">
-    <body>
-        {children}
-    </body>
-  </html>;
-}
-/*
 <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}

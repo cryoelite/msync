@@ -1,5 +1,194 @@
 @import "tailwindcss";
 
+/* Global resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+:root {
+  --font-plex-sans: var(--font-ibm-plex-sans, sans-serif);
+
+  /* Colors - 60-30-10 rule (60% Priamry, 30% Secondary, 10% Tertiary) */
+  /* Legibility is the most important thing with combination of colors. Text should be legible and look good, not just readable. */
+  --color-primary-1: #FFFFFF;
+  --color-primary-2: #E3F2FF;
+  --color-primary-3: #97BDDB;
+  --color-secondary-1: #5282A8;
+  --color-secondary-2: #000000;
+  --color-accent-1: #225075;
+  --color-accent-2: #062742;
+}
+
+/* Global styles */
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  /* line-height: 0.56; */
+  letter-spacing: -3%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  /* line-height: 0.44; */
+  letter-spacing: -2%;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.9rem;
+  /* line-height: 0.38; */
+  letter-spacing: -2%;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  /* line-height: 0.32; */
+  letter-spacing: -1%;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  /* line-height: 0.28; */
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  /* line-height: 0.26; */
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  /* line-height: 0.24; */
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  /* line-height: 0.2; */
+  letter-spacing: 1%;
+}
+
+small {
+  font-weight: 400;
+  font-size: 0.875rem;
+  /* line-height: 0.22; */
+}
+
+button {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  /* line-height: 0.2; */
+  letter-spacing: 1%;
+}
+
+#auth {
+  overflow: hidden;
+  overflow-y: hidden;
+  background-color: var(--color-primary-2);
+  
+
+}
+
+#auth__header {
+  width: 100vw;
+  height: 60px;
+  overflow: hidden;
+  background-color: var(--color-secondary-2);
+}
+
+#logo {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content;
+  width: max-content;
+  height: 60px;
+}
+
+#logo__image {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 1;
+}
+
+#logo__name {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 1;
+  max-height: 100%;
+}
+
+#logo__name__text {
+  font-family: var(--font-plex-sans);
+  align-self: flex-end;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -1%;
+  padding-bottom: 3px;
+}
+
+#auth_content {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#login {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  overflow: hidden;
+  background-color: #dadada;
+  align-self: center;
+  position: relative;
+  bottom: 60px;
+  
+}
+/* Responsive screen sizes */
+
+/* 2xl */
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* lg */
+@media (max-width: 1024px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+}
+
+/* sm */
+@media (max-width: 640px) {
+}
+
+/* xs */
+@media (max-width: 475px) {
+}
+/*
+
 @media (max-width: 200px) {
   #root {
     color: red;
@@ -8,7 +197,7 @@
     background-color: aliceblue;
   }
 }
-/*
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

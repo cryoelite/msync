@@ -1,5 +1,15 @@
-import Image from "next/image";
+import { login } from "@/src/config/route";
+import { isUserAuthValid } from "@/src/cookies/auth";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return <div id="root">Hello, World!</div>;
+
+
+export default async function Home() {
+  const auth_result= await isUserAuthValid();
+
+  if(!auth_result) {
+    redirect(login);
+  }
+
+  return <div>Hello, World!</div>;
 }
